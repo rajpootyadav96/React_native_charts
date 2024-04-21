@@ -2,6 +2,7 @@ import { Text, View } from "react-native"
 import { LineChart } from "react-native-gifted-charts";
 import CustomAreaChart from "./src/components/AreaCharts";
 import DoughnutChart from "./src/components/DoughnutChart";
+import MultilineChart from "./src/components/MultilineChart";
 
 const App = () => {
   const data = [{ value: 15 }, { value: 30 }, { value: 26 }, { value: 40 }];
@@ -29,6 +30,7 @@ const App = () => {
     }}>
       <CustomAreaChart />
     </View>
+    <MultilineChart />
     <DoughnutChart />
 
   </View>

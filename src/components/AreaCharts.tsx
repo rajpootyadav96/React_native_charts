@@ -18,7 +18,7 @@ const CustomAreaChart = () => {
     const customLabel = val => {
         return (
             <View style={{ width: 70, marginLeft: 30 }}>
-                <Text style={{ fontSize:12, color: '#969696' }}>{val}</Text>
+                <Text style={{ fontSize: 12, color: '#969696' }}>{val}</Text>
             </View>
         );
     };
@@ -50,19 +50,6 @@ const CustomAreaChart = () => {
             showStrip: false,
             stripHeight: 190,
             stripColor: 'black',
-            // dataPointLabelComponent: () => {
-            // return (
-            //     <View
-            //     style={{
-            //         backgroundColor: 'black',
-            //         paddingHorizontal: 8,
-            //         paddingVertical: 5,
-            //         borderRadius: 4,
-            //     }}>
-            //     <Text style={{color: 'white'}}>410</Text>
-            //     </View>
-            // );
-            // },
             dataPointLabelShiftY: -70,
             dataPointLabelShiftX: -4,
             hideDataPoint: true,
@@ -101,12 +88,9 @@ const CustomAreaChart = () => {
     return (
         <View style={{
             marginTop: 10,
-            paddingHorizontal:10
-            // paddingVertical: 50,
-            // backgroundColor: '#414141',
+            paddingHorizontal: 10
         }}>
             <LineChart
-                // thickness={6}
                 color="#2DA771"
                 maxValue={600}
                 noOfSections={5}
@@ -121,11 +105,7 @@ const CustomAreaChart = () => {
                 ]}
                 yAxisLabelPrefix="$"
                 yAxisLabelSuffix="k"
-                yAxisTextStyle={{ color: '#969696',fontSize:12 }}
-                // xAxisLabelTextStyle={{color:'black'}}
-                // xAxisLabelTextStyle={{
-                //     color:'black'
-                // }}
+                yAxisTextStyle={{ color: '#969696', fontSize: 12 }}
                 data={data}
                 curved
                 curvature={0.08}
@@ -134,10 +114,7 @@ const CustomAreaChart = () => {
                 startOpacity={0.3}
                 endOpacity={0.1}
                 spacing={38}
-                // backgroundColor="#414141"
-                // rulesColor="gray"
                 hideRules
-                // rulesType="solid"
                 initialSpacing={0}
                 yAxisColor="transparent"
                 xAxisColor="transparent"
